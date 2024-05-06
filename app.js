@@ -29,8 +29,8 @@ const Calculator = {
                 // every button execept specail functionality buttons listed below
                 if (value != "C" && value != "=" && value != "(" && value != 'x' && value != "⇤"){
 
-                    // makes sure that the last input is a ) and the new input is not and operator
-                    if (before && before == ')' && !anyOperator(value)){
+                    // makes sure that the last input is a ) and the new input is not and operator or %
+                    if (before && before == ')' && !anyOperator(value) &&  value !== "%"){
                         text_display.value += '*' + value;
                     } 
                     else 
