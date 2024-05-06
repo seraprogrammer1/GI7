@@ -118,6 +118,51 @@ html {
     }
 }
 
+@media (min-height: 800px) and (min-width: 800px){
+    #buttons {
+        flex-grow: 1;
+        width: 100%;
+        background-color: lightcoral;
+        
+        display: grid;
+        grid-template: 20% 20% 20% 20% 20% / 25% 25% 25% 25% ;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            button {
+                height: 100px;
+                width: 100px;
+
+                border: 1px solid rgb(255, 255, 255);
+                border-radius: 80px;
+                justify-self: center;
+
+                font-size: 40px;
+                font-weight: 500;
+            }
+        }
+
+    }
+    #delete-button-holder {
+        display: flex;
+        flex-direction: row-reverse;
+
+        button {
+            background-color: transparent;
+            margin-right: 20px;
+            height: 60px;
+            width: 60px;
+            font-size: 3m;
+            font-weight: 500;
+        }
+    }
+}
+
 @media (min-height: 1200px) and (min-width: 1200px){
     #buttons {
         flex-grow: 1;
